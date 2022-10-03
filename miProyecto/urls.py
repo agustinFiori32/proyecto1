@@ -22,4 +22,6 @@ urlpatterns = [
     path('view/', views.view),
     path('fecha/', views.fecha),
     path('mi-template/', views.mi_template),
+    path('mi-template/familiares.html', views.familiares),
+    path('mi-template/<str:nombre>', views.tu_template),
 ]
