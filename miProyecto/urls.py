@@ -23,5 +23,8 @@ urlpatterns = [
     path('fecha/', views.fecha),
     path('mi-template/', views.mi_template),
     path('mi-template/familiares.html', views.familiares),
+    path('mi-template/ver_persona.html', views.ver_persona),
+    path('mi-template/crear_persona.html/<str:nombre>/<str:apellido>', views.crear_persona),
     path('mi-template/<str:nombre>', views.tu_template),
+    
 ]
